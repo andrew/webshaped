@@ -42,14 +42,28 @@ module.exports = function(grunt) {
         destMap: 'dist/js/all.js.map'
       },
     },
+    imagemin: {
+      dist: {                            
+        options: {                       
+          optimizationLevel: 3
+        },
+        files: [{
+            expand: true,
+            src: 'images/*.{png,jpg,jpeg}',
+            dest: 'dist/images'
+        }]
+      },
+    },
   });
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-nodeunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  
+
   grunt.loadNpmTasks('grunt-jsmin-sourcemap');
+
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'nodeunit']);

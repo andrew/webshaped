@@ -1,3 +1,3 @@
-npm install grunt-jsmin-sourcemap --save-dev
+npm install grunt-contrib-imagemin --save-dev
 grunt -h
-grunt jsmin-sourcemap
+grunt imagemin
