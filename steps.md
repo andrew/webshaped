@@ -1,3 +1,3 @@
-npm install
+npm install grunt-jsmin-sourcemap --save-dev
 grunt -h
-grunt
+grunt jsmin-sourcemap

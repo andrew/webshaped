@@ -35,12 +35,21 @@ module.exports = function(grunt) {
         tasks: ['jshint:test', 'nodeunit']
       },
     },
+    'jsmin-sourcemap': {
+      all: {
+        src: 'lib/*.js',
+        dest: 'dist/js/all.min.js',
+        destMap: 'dist/js/all.js.map'
+      },
+    },
   });
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-nodeunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  
+  grunt.loadNpmTasks('grunt-jsmin-sourcemap');
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'nodeunit']);
