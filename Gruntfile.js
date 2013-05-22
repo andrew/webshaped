@@ -54,6 +54,13 @@ module.exports = function(grunt) {
         }]
       },
     },
+    sass: {
+      dist: {
+        files: {
+          'dist/css/styles.css': 'scss/styles.scss'
+        }
+      },
+    },
   });
 
   // These plugins provide necessary tasks.
@@ -64,6 +71,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-jsmin-sourcemap');
 
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'nodeunit']);
