@@ -34,6 +34,10 @@ module.exports = function(grunt) {
         files: '<%= jshint.test.src %>',
         tasks: ['jshint:test', 'nodeunit']
       },
+      sass: {
+        files: ['scss/*.scss'],
+        tasks: ['sass'],
+      }
     },
     'jsmin-sourcemap': {
       all: {
