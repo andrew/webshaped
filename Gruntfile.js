@@ -75,6 +75,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'nodeunit']);
-
+  grunt.registerTask('default', ['jshint', 'nodeunit', 'sass']);
+  grunt.registerTask('ship', ['default', 'imagemin', 'jsmin-sourcemap', 'sass']);
 };
