@@ -1,0 +1,26 @@
+---
+slides:
+- slide:
+    commit: e105f8cb545d61312b3b68febf6eddeae95fdcb2
+    message: install instructions
+- slide:
+    commit: 47cd65c360177663ea2c8055c0aa25d6c821839d
+    message: grunt init project
+- slide:
+    commit: b0488d3b3e5b6c7e22d3f52a4f799b9e8c536086
+    message: added js-min task
+- slide:
+    commit: 313f9ba5e4b3e99849d47b55360cdbbefd4aa912
+    message: added imagemin task
+- slide:
+    commit: d0e8eed86ec304be50cb649330bd32ea9085b82b
+    message: added sass task
+- slide:
+    commit: 2793d16027aa509266e642b47bf513b12517d239
+    message: composed ship task
+- slide:
+    commit: 99df777ce0fd1faae5b4d9a70a9336e54b25713f
+    message: added sass to watch config
+- slide:
+    commit: 4d1cbab74a84554628ab4aec59c6d54a0be7a471
+    message: bower
